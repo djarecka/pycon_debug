@@ -157,7 +157,7 @@ ZeroDivisionError: division by zero
     `python -m pdb code.py`
 
     - stop the program and invoke the debugger:
-    `import pdb; pdb.set_trace` or `breakpoint()` (in Python 3.7+)
+    `import pdb; pdb.set_trace()` or `breakpoint()` (in Python 3.7+)
 ---
 # using the interactive debugger
 
@@ -189,6 +189,18 @@ after inoking the debugger using `breakpoint()` in the code:
 - `<upper arrow>` - search the commands history
 
 
+---
+# pdb commands: explore the code and variables
+
+- `p` - evaluate the expression and print its value
+
+- `pp` - like `p`, but uses the `pprint` module
+
+- `l(ist)` - list source code around the current line
+
+- `ll` - list all source code for the current function or frame
+
+- `a(rgs)` - print the argument list of the current function
 
 ---
 # pdb commands: check the stack trace
